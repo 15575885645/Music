@@ -1,0 +1,157 @@
+@font-face {
+    font-family: 'wangyi';
+    src:url("../asserts/STHeiti-Light.ttc")
+}
+.NavLink{
+    width:7.5rem;
+    height:0.75rem;
+    display:flex;
+ 
+    i{
+        font-size:0.35rem;
+        display:flex;
+        align-items:center;
+    }
+    i:nth-child(1){
+        margin-right: 2.5rem;
+    margin-left: 0.2rem;
+    }
+    i:nth-child(2){
+        margin-right: 0.4rem;
+    }
+    i:nth-child(4){
+        margin-left: 2.8rem;
+    }
+}
+.NavLink2{
+    width:7.5rem;
+    height:0.75rem;
+    display:flex;
+    justify-content: center;
+ 
+    .NavLink2_li{
+        width:2rem;
+        height:0.75rem;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        color:white;
+        position: relative;
+        font-size:0.18rem;
+        .Nav{
+            width:0.5rem;
+            height:0.05rem;
+            position:absolute;
+            bottom:0.02rem;
+            background:white;
+            left:0.75rem ;//left:2.78rem
+    
+        }
+        p{
+            width:2rem;
+        height:0.75rem;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        color:white;
+        position: relative;
+        font-size:0.18rem;
+        }
+    }
+ 
+}
+.NavLink2_li_animation{
+   transition:all 0.3s 
+}
+.NavLink3_li{ 
+    width:1rem;
+    height:1rem;
+    border-radius:50%;
+    background:red;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+.NavLink3{
+     display:flex;
+     align-items:center;
+     margin-top:0.6rem;
+     justify-content: space-around;
+     p{
+         font-size:0.1rem;
+         text-align:center;
+         font-family: "wangyi"
+     }
+     i{
+         font-size:0.35rem;
+         color:white;
+     }
+     height:1.5rem;
+     margin-bottom:0.5rem;
+}
+.ListType{
+    span{
+        font-size:0.14rem;
+    }
+    i{
+        font-size:0.18rem;
+    }
+    p{
+        font-size:0.12rem;
+        width:2.2rem;
+        padding-left:0.08rem;
+    }
+   
+}
+.ListType_li_img{
+    img{
+        max-width:100%;
+        border-radius:5%;
+       
+    }
+    width:2.2rem;
+    height:2.2rem;
+    text-decoration: none;
+}
+.animation_opacity{
+    animation:opacity 0.5s ease-in
+}
+@keyframes opacity{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.ListType_li{
+    width:2.2rem;
+    height:2.2rem;
+    margin-left:0.06rem;
+}
+.ListType_ul{
+    display:flex;
+    flex-wrap:wrap;
+    width:7rem;
+    margin-left:0.3rem;
+}
+.Home_1{
+    width:7.5rem;
+    
+}
+.ListType_title{
+    display:flex;
+    align-items: center;
+    p{
+        width:1.15rem;
+    }
+    margin-bottom:0.25rem;
+}
+.Layout{
+    overflow:hidden;
+    margin-top:1.5rem
+}
+.Main{
+    position:fixed;
+    top:0;
+}

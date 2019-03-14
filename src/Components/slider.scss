@@ -1,0 +1,45 @@
+.slider{
+    position: relative;
+    width:7rem;
+    height:3rem;
+    overflow:hidden;
+    margin-left:0.25rem;
+    animation:opacity 0.5s ease-in-out;
+ 
+}
+@keyframes opacity{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.Main{
+    width:7.5rem;
+    position:fixed;
+    background:red;
+}
+.slider_container{
+    height:3rem;
+    display:flex;
+    overflow:hidden;
+    position: absolute;
+    width:7rem;
+    li{
+      width:7rem;
+      height:3rem;
+    }
+    img{
+        border-radius: 2%;
+        max-height:100%;
+        max-width:100%;
+    }
+}
+*{
+    padding:0;
+    margin:0;
+}
+li{
+    list-style:none;
+}

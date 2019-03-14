@@ -1,34 +1,28 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
-import axios from 'axios'
+import { Route, BrowserRouter as Router, Switch } from 'react-router-dom'
+import SongSheets1 from './pages/SongSheets'
+import Home1 from './pages/Home'
+import React from 'react'
+import { TransitionGroup, CSSTransition } from 'react-transition-group'
+import { withRouter } from 'react-router-dom'
 
-class App extends Component {
-  componentDidMount(){
-    axios.get("/user").then((res)=>{
-      console.log(res);
-    })
-  }
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
-  }
+class Routes extends React.Component {
+    componentWillReceiveProps(nextProps) {
+        if (this.props.location !== nextProps.location) {
+            window.scrollTo(0, 0)
+        }
+        else if(this.props.location=="/"){
+            console.log("1");
+            return true
+        }
+    }
+    render() {
+        const location = this.props.location;
+        return (
+            <Switch location={location}>
+                <Route path="/SongSheet/:id" component={SongSheets1} />
+                <Route exact path="/" component={Home1} />
+            </Switch>
+        )
+    }
 }
-
-export default App;
+export default withRouter(Routes)

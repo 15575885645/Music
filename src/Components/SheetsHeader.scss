@@ -1,0 +1,73 @@
+.top_1{
+    display:flex;
+    height:0.8rem;
+    width:7.5rem;
+    display:flex;
+    align-items:center;
+    p{
+        font-size:0.18rem;
+        color:white;
+        padding-left:0.25rem;
+        width:4.5rem;
+        text-overflow:ellipsis;
+        white-space:nowrap;
+        color:white;
+        height:0.48rem;
+        display: flex;
+        align-items: center;
+    }
+    i{
+        font-size:0.45rem;
+    }
+}
+.SongSheets{
+    background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+    background-size:400% 400%;
+}
+.header_img{
+    width:3rem;
+    height:3rem;
+    img{
+        max-width:100%;
+        max-height:100%;
+        border-radius:2%
+    }
+    border-radius:2%
+}
+.SongSheets{
+    animation: Gradient 4s ease infinite;
+    
+}
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+.header{
+    display:flex;
+    justify-content: center;
+    margin-top:1rem;
+    margin-bottom:1rem;
+    animation: Gradient 15s ease infinite;
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+.SheetsHeader{
+    height:40%;
+}

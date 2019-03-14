@@ -1,0 +1,231 @@
+.Player_logo{
+    width:0.8rem;
+    img{
+        max-width:100%;
+        max-height:100%;
+    }
+}
+.Player{
+    position:fixed;
+    display:flex;
+    align-items:center;
+    bottom:0;
+    width:7.5rem;
+    height:1rem;
+    animation:opacity 0.5s;
+    background:white;
+    p{
+        font-size:0.18rem;
+        margin-top:-0.3rem;
+        padding-left:0.2rem;
+    }
+}
+@keyframes opacity{
+    0%{
+        opacity:0;
+    }
+    100%{
+        opacity:1;
+    }
+}
+.PlayerMain_img{
+    width:3rem;
+    height:3rem;
+    border-radius:50%;
+    overflow:hidden;
+    animation:rotate 5s linear infinite
+}
+*{
+    padding:0;
+    margin:0
+}
+@keyframes rotate{
+    0%{
+        transform:rotate(0deg);
+    }
+    100%{
+        transform:rotate(360deg);
+    }
+}
+.PlayerMain_container_out{
+    width:5rem;
+    height:5rem;
+    background:black;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+.PlayerMain{
+    position:fixed;
+    width:7.5rem;
+    height:100%;
+    bottom:-100%;
+    transition:all 0.4s linear;
+    animation: Gradient 10s ease infinite;
+    p{
+        font-size:0.18rem;
+        width:6rem;
+        overflow:hidden;
+        margin-left:0.3rem; 
+        overflow:hidden;
+        text-overflow:ellipsis;
+        white-space:nowrap;
+        color:white;
+    }  
+
+ 
+    background:white;
+    img{
+        max-width:100%;
+        max-height:100%;
+        border-radius:50%;
+    }
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+.PlayerMain_top{
+    display:flex;
+    align-items:center;
+    height:0.8rem;
+    i{
+        font-size:0.45rem;
+        color:rgba(255,255,255,0.7);
+    }
+    padding-left:0.15rem;
+}
+.PlayerMain_container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:70%;
+}
+.PlayerMain_footer{
+    height:20%;
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    i{
+       
+        font-size:0.35rem;
+        margin-left:0.35rem;
+        margin-right:0.3rem;
+        color:rgba(255,255,255,0.7);
+    }
+}
+.SheetsList{
+    background:white;
+    border-top-left-radius:0.2rem;
+    border-top-right-radius: 0.2rem;
+}
+ 
+.SheetsList_num{
+   display:flex;
+   align-items:center;
+   height:0.8rem;
+   p{
+       width:5rem;
+       span{
+        color:black;
+        font-size:0.24rem;
+       }
+       color:#CCCCCC;
+       font-size:0.12rem;
+       padding-left:0.25rem;
+       height:0.4rem;
+   }
+    
+   i{
+       font-size:0.45rem;
+       padding-left:0.2rem;
+   }
+}
+.SheetList_ul{
+    li{
+        display:flex;
+        height:1rem;
+        align-items:center;
+        border-bottom-style:solid;
+        border-bottom-width:1px;
+        border-bottom-color:#D5D5D5;
+        
+    }
+    .SheetList_li{
+        width:6rem;
+        p{
+        width:5rem;
+        overflow:hidden;
+        text-overflow:ellipsis;
+        white-space:nowrap
+        }
+    
+    }
+    p{
+        font-size:0.18rem;
+    }
+}
+.SheetList_index{
+    font-size:0.4rem;
+    height:100%;
+    width:1rem;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    color:#CCCCCC
+}
+.UpList{
+   width:7.5rem;
+   height:60%;
+   bottom:-100%;
+   position: fixed;
+   background:white; 
+   opacity:0;
+   transition:all 0.5s;
+   border-top-left-radius: 2.9%;
+   border-top-right-radius:2.9%;
+   overflow: hidden;
+   li{
+       font-size:0.16rem;
+       height:1rem;
+       display:flex;
+       align-items:center;
+       border-bottom-color:#CCCCCC;
+       border-bottom-style:solid;
+       border-bottom-width:0.005rem;
+       padding-left:0.1rem;
+       p{
+        width:5.8rem;
+        overflow:hidden;
+        text-overflow:ellipsis;
+        white-space:nowrap;
+        color:black;
+        padding-left:0.2rem;
+        margin-left:0rem;
+    }
+    .shanchu{
+        width:1rem;
+        height:1rem;
+        display:flex;
+        align-items:center;
+        justify-content: center;
+    }
+}
+}
+.icon-horn{
+    color:red;
+}
+.ListType{
+    height:6.7rem;
+}
+ 
